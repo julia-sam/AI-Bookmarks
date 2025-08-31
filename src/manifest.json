@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "AI Bookmarks",
+  "version": "1.0",
+  "description": "Save and search web content using AI",
+  
+  "permissions": [
+    "storage",
+    "activeTab",
+    "contextMenus"
+  ],
+  
+  "background": {
+    "service_worker": "background.js"
+  },
+  
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["content.js"]
+  }],
+  
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "AI Bookmarks",
+    "default_icon": {
+      "16": "icons/bookmark.png",
+      "48": "icons/bookmark.png",
+      "128": "icons/bookmark.png"
+    }
+  },
+  
+  "options_page": "options.html",
+  
+  "icons": {
+    "16": "icons/bookmark.png",
+    "48": "icons/bookmark.png",
+    "128": "icons/bookmark.png"
+  }
+}

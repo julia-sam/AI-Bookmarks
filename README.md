@@ -2,6 +2,9 @@
 
 A Chrome extension that allows you to save highlighted text and images from any webpage to an AI-powered bookmarks using Pinecone vector database and Hugging Face embeddings.
 
+<img src="https://github.com/julia-sam/AI-Bookmarks/blob/master/popup.png?raw=true" width="300" height="600">
+<img src="https://github.com/julia-sam/AI-Bookmarks/blob/master/dashboard.png?raw=true" width="600" height="600">
+
 ## Features
 
 - **Text Highlighting**: Select any text on a webpage and save it to your bookmarks with context
